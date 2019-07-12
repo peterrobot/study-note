@@ -9,11 +9,10 @@
 int main(){
     //HelloWorld();
     //arrayTest();
-    //structTest();
     system("pause");
     return 0;
 }
-    
+
 /*
 void HelloWorld(void){
     using std::cout;
