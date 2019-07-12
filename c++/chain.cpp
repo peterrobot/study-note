@@ -4,16 +4,8 @@
 using namespace std;
 
 //Function
-void chain(void);
 
 int main(){
-    cout << "Hello World";
-    int x;
-    cin >> x;
-    return 0;
-}
-
-void chain(void){
     const int MAX = 10;
     struct student
     {
@@ -22,18 +14,28 @@ void chain(void){
     }*HEAD,*p,*t;
     int InPut;
     HEAD = new student;
-    cin >> InPut;
     p = new student;
-    p -> score = InPut;
-    p -> NEXT = new student;
-    HEAD -> NEXT = p;
+    HEAD->NEXT = p;
     for(int i=0;i<MAX;i++){
-        cout << "Please enter the score of " << i+2 << "student." << endl;
+        cout << "Please enter the score of " << i+1 << " student." << endl;
         cin >> InPut;
-        p = new student;
-        p -> score = InPut;
-        p -> NEXT = new student;
+        cout << "The memory adress is " << p << ".\n";
+        p->score = InPut;
         t = p;
-        t -> NEXT = p;
+        p = new student;
+        t->NEXT = p;
     }
+    p->NEXT = NULL;
+    cout << endl
+         << "Here is the output.\n";
+    p = HEAD->NEXT;
+    int i = 1;
+    do{
+        cout << "Now the score of " << i  << " student is " << p->score << endl;
+        cout << "The memory adress is " << p << endl;
+        p = p->NEXT;
+        i++;
+    } while (p->NEXT != NULL);
+    system("pause");
+    return 0;
 }
