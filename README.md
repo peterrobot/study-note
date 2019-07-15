@@ -3,8 +3,8 @@
 The study note of all
 
 1. C++
-2. Math
-3. English
+~~2. Math~~
+2. English
 
 ~~who knows how much I want to broke my computer~~
 
