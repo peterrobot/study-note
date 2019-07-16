@@ -53,7 +53,7 @@ for C primer plus
 ``` c++
     cout << "No games,no life";
     cout << "No game,"  "n life";
-    cout << "No game";
+    cout << "No game"
     "No life";
     //they are all the same
 ```
@@ -66,7 +66,17 @@ for C primer plus
     sizeof(arrayName);  //retrun the length of array,including the NUL.
 ```
 
-#### How cin treat  it
+#### How cin treat it
 
-1. The "cin" use blank to get the end of the string
+1. The "cin" use blank to identify the end of the string
 2. The "cin" could not prevent and potential risk of excessive elementary
+
+So here is the way to slove special situation.
+**The class function**
+`cin.getline()` & `cin.get()`
+They have someting in comment that they both they both got the whole line as input and don't stop till they see the line feed.
+
+* Attention
+  * The `cin.getline()` will pass the line feed, however, on the contrary `cin.get()` will hold it in the string.
+  * Both of them have two parameter: arrayname & arraysize. Here is an example `cin.get(arrayname,arraysize)`.
+  * `cin.getline()` will pass the line feed, while `cin.get()` will leave it in the input string. In order to due to this, we need to use `.get()` twice. And here is a new feather called function overloading which will learn later.
