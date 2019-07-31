@@ -30,6 +30,7 @@
     "clang.completion.enable": true,
     "files.associations": {
         "iostream": "cpp",
-        "new": "cpp"
+        "new": "cpp",
+        "array": "cpp"
     } // 效果效果比cpptools要好
 }

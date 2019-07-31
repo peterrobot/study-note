@@ -4,7 +4,7 @@ for C primer plus
 
     first edited in 2019.6.6        IN ubuntu
 
-1. Composite Type
+1.Composite Type
 
 ## array
 
@@ -16,7 +16,7 @@ for C primer plus
 
 初始化 (Initialization)
 
-``` c++
+```c++
     int hand[4];    //available
     int cards[4] = {1,2,3,4} ;    //available
     int score[3] = {0};   //available,set every element as zero
@@ -34,7 +34,7 @@ for C primer plus
 
 #### Initialization
 
-``` c++
+```c++
     char name[10] = {'p','e','t','e','r','\0'};   //available,a string
     char name[10] = {'T','o','m'}     //availbale,but not a string
     char bird[6] = "eagle";      //available,compilar will automatically add 'null character' or '\0' to the end
@@ -50,7 +50,7 @@ for C primer plus
     The compilar will automactially connet two string which has two blank between.
 >*Blank*: space,tab character,line feed
 
-``` c++
+```c++
     cout << "No games,no life";
     cout << "No game,"  "n life";
     cout << "No game"
@@ -60,7 +60,7 @@ for C primer plus
 
 #### Using string as a array
 
-``` c++
+```c++
     #include <cstring>  //for function strlen
     strlen(arrayName);  //return the number of 'letters' in the string,and it doesn't count NUL.
     sizeof(arrayName);  //retrun the length of array,including the NUL.
@@ -80,3 +80,5 @@ They have someting in comment that they both they both got the whole line as inp
   * The `cin.getline()` will pass the line feed, however, on the contrary `cin.get()` will hold it in the string.
   * Both of them have two parameter: arrayname & arraysize. Here is an example `cin.get(arrayname,arraysize)`.
   * `cin.getline()` will pass the line feed, while `cin.get()` will leave it in the input string. In order to due to this, we need to use `.get()` twice. And here is a new feather called function overloading which will learn later.
+
+## structure
