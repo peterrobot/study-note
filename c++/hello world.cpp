@@ -13,6 +13,6 @@ int main(){
         cout << endl;
         x--;
     }
-    cin >> x;
+    system("pause");
     return 0;
 }
