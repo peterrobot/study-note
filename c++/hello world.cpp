@@ -13,6 +13,8 @@ int main(){
         cout << endl;
         x--;
     }
-    cin >> x;
+    int y = 0;
+    cin >> x >> y;
+    cout << x << y <<endl;
     return 0;
 }
