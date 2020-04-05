@@ -13,8 +13,12 @@ int main(){
         cout << endl;
         x--;
     }
+<<<<<<< HEAD
     int y = 0;
     cin >> x >> y;
     cout << x << y <<endl;
+=======
+    system("pause");
+>>>>>>> f9ac199e93c68a8023811bb46720e782d6a07ac3
     return 0;
 }
