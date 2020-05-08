@@ -32,5 +32,17 @@
         "array": "cpp",
         "ostream": "cpp",
         "istream": "cpp"
-    } // 效果效果比cpptools要好
+    },
+    "cSpell.words": [
+        
+    ],
+    "cSpell.ignoreWords": [
+        "cout",
+        "iostream",
+        "shadowbox",
+        "breaklines",
+        "keywordstyle",
+        "numberstyle",
+        "rulesepcolor"
+    ] // 效果效果比cpptools要好
 }
